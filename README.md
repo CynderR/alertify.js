@@ -9,7 +9,7 @@ Please visit http://fabien-d.github.com/alertify.js/ if you are looking for more
 
 ## Examples
 
-https://github.com/CynderR/alertify.js/index.html
+https://github.com/CynderR/alertify.js/blob/master/index.html
 
 
 ## License
