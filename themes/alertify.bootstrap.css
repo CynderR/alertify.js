@@ -16,8 +16,6 @@
 	   -moz-background-clip: padding;     /* Firefox 3.6 */
 	        background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
 }
-
-
 .alertify-log {
 	background: #D9EDF7;
 	padding: 8px 14px;
@@ -26,13 +24,13 @@
 	text-shadow: 0 1px 0 rgba(255,255,255,.5);
 	border: 1px solid #BCE8F1;
 }
-	.alertify-log-error {
-		color: #B94A48;
-		background: #F2DEDE;
-		border: 1px solid #EED3D7;
-	}
-	.alertify-log-success {
-		color: #468847;
-		background: #DFF0D8;
-		border: 1px solid #D6E9C6;
-	}
+.alertify-log-error {
+	color: #B94A48;
+	background: #F2DEDE;
+	border: 1px solid #EED3D7;
+}
+.alertify-log-success {
+	color: #468847;
+	background: #DFF0D8;
+	border: 1px solid #D6E9C6;
+}
