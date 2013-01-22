@@ -1,17 +1,15 @@
 [![build status](https://secure.travis-ci.org/fabien-d/alertify.js.png)](http://travis-ci.org/fabien-d/alertify.js)
 
-Alertify is an unobtrusive customizable JavaScript notification system.
+logify JavaScript notification system.
+Please visit http://fabien-d.github.com/alertify.js/ if you are looking for more then a logging system.
 
 ## Features
 
-* Fully customizable alert, confirm and prompt dialogs
 * Fully customizable unobtrusive notification system
-* Callback parameter handling both OK and Cancel button clicks
-* Chaining which allows queued dialogs
 
 ## Examples
 
-http://fabien-d.github.com/alertify.js/
+https://github.com/CynderR/alertify.js/index.html
 
 ## Usage
 
@@ -25,19 +23,9 @@ See wiki [Changeset](http://github.com/fabien-d/alertify.js/wiki/Changeset)
 
 See wiki [Submitting a Pull Request](https://github.com/fabien-d/alertify.js/wiki/Submitting-a-Pull-Request)
 
-## Where is it being tested?
-
-* Microsoft Internet Explorer 7+ (Standards Mode)
-* Google Chrome
-* Mozilla FireFox
-* Apple Safari
-* Opera
-* iOS
-* Android
-
 ## License
 
-Alertify is licensed under MIT http://www.opensource.org/licenses/MIT
+logify is licensed under MIT http://www.opensource.org/licenses/MIT
 
 ### Copyright
 
