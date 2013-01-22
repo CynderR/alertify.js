@@ -27,9 +27,7 @@
 	position: fixed; z-index: 99999;
 	top: 0; right: 0; bottom: 0; left: 0;
 }
-	.alertify-cover-hidden {
-		display: none;
-	}
+
 .alertify {
 	position: fixed; z-index: 99999;
 	top: 50px; left: 50%;
@@ -77,19 +75,6 @@
 		        transform: translate(300px, 0);
 		opacity: 0;
 	}
-	.alertify-dialog {
-		padding: 25px;
-	}
-		.alertify-resetFocus {
-			border: 0;
-			clip: rect(0 0 0 0);
-			height: 1px;
-			margin: -1px;
-			overflow: hidden;
-			padding: 0;
-			position: absolute;
-			width: 1px;
-		}
 		.alertify-inner {
 			text-align: center;
 		}
@@ -101,23 +86,7 @@
 			        box-sizing: border-box;
 			font-size: 100%;
 		}
-		.alertify-buttons {
-		}
-			.alertify-button,
-			.alertify-button:hover,
-			.alertify-button:active,
-			.alertify-button:visited {
-				background: none;
-				text-decoration: none;
-				border: none;
-				/* line-height and font-size for input button */
-				line-height: 1.5;
-				font-size: 100%;
-				display: inline-block;
-				cursor: pointer;
-				margin-left: 5px;
-			}
-
+	
 .alertify-isHidden {
 	visibility: hidden;
 }
