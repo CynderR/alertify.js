@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<script src="lib/alertify.js"></script>
+<link rel="stylesheet" type="text/css" href="themes/alertify.core.css">
+<link rel="stylesheet" type="text/css" href="themes/alertify.bootstrap.css">
+</HEAD>
+<BODY>
+  <script type="text/javascript">
+    function success(){
+      alertify.success("success! ;)");
+    }
+    function error(){
+      alertify.error("OH NOSE =`(");
+    }
+    function custom(){
+      alertify.custom = alertify.extend( "custom" );
+      alertify.custom( "message" );
+    }
+  </script>
+
+  <input type="button" onclick="success()" value="Success">
+  <input type="button" onclick="error()" value="Error">
+  <input type="button" onclick="custom()" value="Custome">
+</BODY>
+</HTML>
