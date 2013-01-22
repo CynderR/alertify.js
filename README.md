@@ -11,17 +11,6 @@ Please visit http://fabien-d.github.com/alertify.js/ if you are looking for more
 
 https://github.com/CynderR/alertify.js/index.html
 
-## Usage
-
-See wiki [How to Use](http://github.com/fabien-d/alertify.js/wiki/How-to-Use)
-
-## Changeset
-
-See wiki [Changeset](http://github.com/fabien-d/alertify.js/wiki/Changeset)
-
-## Contributing
-
-See wiki [Submitting a Pull Request](https://github.com/fabien-d/alertify.js/wiki/Submitting-a-Pull-Request)
 
 ## License
 
