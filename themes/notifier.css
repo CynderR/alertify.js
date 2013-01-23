@@ -1,0 +1,151 @@
+.notifier-show,
+.notifier-log {
+  -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+	-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	-moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	-ms-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	-o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+}
+.notifier-hide {
+	-webkit-transition: all 250ms cubic-bezier(0.600, 0, 0.735, 0.045); /* older webkit */
+	-webkit-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	-moz-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	-ms-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	-o-transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	transition: all 250ms cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */
+}
+.notifier-log-hide {
+	-webkit-transition: all 500ms cubic-bezier(0.600, 0, 0.735, 0.045); /* older webkit */
+	-webkit-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	-moz-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	-ms-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	-o-transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045);
+	transition: all 500ms cubic-bezier(0.600, -0.280, 0.735, 0.045); /* easeInBack */
+}
+.notifier-cover {
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.notifier {
+	position: fixed;
+	z-index: 99999;
+	top: 50px;
+	left: 50%;
+	width: 550px;
+	margin-left: -275px;
+	opacity: 1;
+}
+.notifier-hidden {
+	-webkit-transform: translate(0,-150px);
+	-moz-transform: translate(0,-150px);
+	-ms-transform: translate(0,-150px);
+	-o-transform: translate(0,-150px);
+	transform: translate(0,-150px);
+	opacity: 0;
+	display: none;
+}
+/* overwrite display: none; for everything except IE6-8 */
+:root *> .notifier-hidden { 
+	display: block; 
+}
+.notifier-logs {
+	position: fixed;
+	z-index: 5000;
+	bottom: 10px;
+	right: 10px;
+	width: 300px;
+}
+.notifier-logs-hidden {
+	display: none;
+}
+.notifier-log {
+	display: block;
+	margin-top: 10px;
+	position: relative;
+	right: -300px;
+	opacity: 0;
+}
+.notifier-log-show {
+	right: 0;
+	opacity: 1;
+}
+.notifier-log-hide {
+	-webkit-transform: translate(300px, 0);
+	-moz-transform: translate(300px, 0);
+	-ms-transform: translate(300px, 0);
+	-o-transform: translate(300px, 0);
+	transform: translate(300px, 0);
+	opacity: 0;
+}
+.notifier-inner {
+	text-align: center;
+}
+.notifier-text {
+	margin-bottom: 15px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 100%;
+}
+	
+.notifier-isHidden {
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 680px) {
+	.notifier,
+	.notifier-logs {
+		width: 90%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.notifier {
+		left: 5%;
+		margin: 0;
+	}
+}
+/**
+ * Twitter Bootstrap Look and Feel
+ * Based on http://twitter.github.com/bootstrap/
+ */
+.notifier,
+.notifier-log {
+	font-family: sans-serif;
+}
+.notifier {
+	background: #FFF;
+	border: 1px solid #8E8E8E; /* browsers that don't support rgba */
+	border: 1px solid rgba(0,0,0,.3);
+	border-radius: 6px;
+	box-shadow: 0 3px 7px rgba(0,0,0,.3);
+	-webkit-background-clip: padding;     /* Safari 4? Chrome 6? */
+	-moz-background-clip: padding;     /* Firefox 3.6 */
+	background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+
+.notifier-log {
+	background: #2C2C2C;
+	padding: 8px 14px;
+	border-radius: 4px;
+	color: #3A9ABF;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+	border: 1px solid #BCE8F1;
+}
+	.notifier-log-error {
+		color: #B94A48;
+		background: #F2DEDE;
+		border: 1px solid #EED3D7;
+	}
+	.notifier-log-success {
+		color: #33aa33;
+		background: #2C2C2C;
+		border: 1px solid #dddddd;
+	}
