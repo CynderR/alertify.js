@@ -58,10 +58,9 @@
 
       close : function (elem, wait) {
         // Unary Plus: +"2" === 2
-        var timer = (wait && !isNaN(wait)) ? +wait : this.delay,
+        var timer = (wait && !isNaN(wait)) ?  wait : this.delay,
             self  = this,
             hideElement, transitionDone;
-
         // set click event on log messages
         this.bind(elem, "click", function () {
           hideElement(elem);
@@ -124,6 +123,8 @@
       },
 
       log : function (message, type, wait) {
+        // Wait in seconds.
+        if (wait && wait < 50) wait *= 1000;
         // check to ensure the notifier dialog element
         // has been successfully created
         var check = function () {
@@ -169,7 +170,8 @@
       extend  : _notifier.extend,
       init    : _notifier.init,
       log     : function (message, type, wait) { _notifier.log(message, type, wait); return this; },
-      success : function (message, wait) { _notifier.log(message, "success", wait); return this; },
+      info    : function (message, wait) { _notifier.log(message, "info", wait); return this; },
+      warning : function (message, wait) { _notifier.log(message, "warning", wait); return this; },
       error   : function (message, wait) { _notifier.log(message, "error", wait); return this; }
     };
   };
