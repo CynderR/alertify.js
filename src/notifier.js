@@ -150,6 +150,13 @@
         var log = document.createElement("article");
         log.className = "notifier-log" + ((typeof type === "string" && type !== "") ? " notifier-log-" + type : "");
         log.innerHTML = message;
+        // Prevent showing the exact same message twice, but keep the newer message.
+        for (var i = 0, l = elLog.children.length; i < l; i++) {
+          if (elLog.children[i].innerHTML == log.innerHTML) {
+            elLog.removeChild(elLog.children[i]);
+            break;
+          }
+        }
         // prepend child
         elLog.insertBefore(log, elLog.firstChild);
         // triggers the CSS animation
